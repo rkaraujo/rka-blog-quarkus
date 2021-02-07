@@ -8,12 +8,16 @@ public class PostPage {
     private final String title;
     private final LocalDateTime date;
     private final String dateFormatted;
+    private final String description;
+    private final String content;
 
-    public PostPage(String path, String title, LocalDateTime date, String dateFormatted) {
+    public PostPage(String path, String title, LocalDateTime date, String dateFormatted, String description, String content) {
         this.path = path;
         this.title = title;
         this.date = date;
         this.dateFormatted = dateFormatted;
+        this.description = description;
+        this.content = content;
     }
 
     public String getPath() {
@@ -30,5 +34,13 @@ public class PostPage {
 
     public String getDateFormatted() {
         return dateFormatted;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public String getContent() {
+        return content;
     }
 }
